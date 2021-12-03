@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+
+        
+        body {
+            margin: 10px;
+            padding: 10;
+            font-family: 'Quicksand', sans-serif;
+            background-image: linear-gradient(to right top, #0e0537, #00376e, #006aa1, #00a1cb, #12d9eb);
+            height: 120vh;
+        }
+
+        .invit {
+            display: grid;
+            grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+            height: 100vh;
+            grid-gap: 10px 10px;
+        }
+
+        .c1 {
+            background: #FFC75F;
+            border-radius: 8px;
+            grid-column: 1 / 2;
+            grid-row: 4 / 10;
+        }
+
+        .c2 {
+            background: #00C9A7;
+            border-radius: 30px;
+            grid-column: 2 / 7;
+            grid-row: 1 / 6;
+            opacity: 30%;
+        }
+
+        .c3 {
+            background: papayawhip;
+            border-radius: 30px;
+            grid-column: 7 / 10;
+            grid-row: 3 / 2;
+            opacity: 30%;
+        }
+
+        
+
+        .c5 {
+            border: 1px solid pink;
+            grid-column: 8 / 9;
+            grid-row: 4 / 8;
+            transform: rotate(120deg);
+            writing-mode: vertical-lr;
+
+        }
+
+        .c6 {
+            border: 1px solid purple;
+            grid-column: 8 / 9;
+            grid-row: 6 / 9;
+            transform: rotate(120deg);
+            writing-mode: vertical-lr;
+
+        }
+
+        .c7 {
+            border: 1px solid brown;
+            grid-column: 8 / 8;
+            grid-row: 3 / 4;
+        }
+
+
+        .c8 {
+            border: 1px solid pink;
+            grid-column: 9 / 9;
+            grid-row: 4 / 5;
+            
+        }
+
+        .c9 {
+            border: 1px solid blueviolet;
+            display: grid;
+            grid-column: 7 / 9;
+            grid-row: 3 / 6;
+            grid-gap: 10px;
+
+        }
+
+        .c10 {
+            background: #4FFBDF;
+            border-radius: 8px;
+            grid-column: 8 / 9;
+            grid-row: 5 / 9;
+            opacity: 30%;
+        }
+
+
+
+        .inv {
+            font-size: 30px;
+            grid-column: 2 / 3;
+            grid-row: 3 / 4 ;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            transform: rotate(180deg);
+            writing-mode: vertical-lr;
+        }
+
+        .name {
+            font-size: 15px;
+            color: green;
+            display: grid;
+            grid-column-start: 1;
+            grid-row: 4 / 10;
+            transform: rotate(180deg);
+            writing-mode: vertical-lr;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .texto {
+            font-size: 20px;
+            display: grid;
+            grid-column: 3 / 7;
+            grid-row: 1 / 6;
+            justify-items: center;
+            align-items: center;
+        }
+
+
+        .CristianC {
+            font-size: 15px;
+            color: lightgreen;
+            display: grid;
+            grid-column: 3 / 5;
+            grid-row: 5 / 10;    
+            justify-items: center;
+            align-items: center;
+            transform: rotate(240deg);
+            writing-mode: vertical-rl;
+        }
+
+        .Daniela {
+            font-size: 15px;
+            color: lightpink;
+            display: grid;
+            grid-column: 5 / 6;
+            grid-row: 4 / 10;
+            justify-items: center;
+            align-items: center;
+            transform: rotate(240deg);
+            writing-mode: vertical-rl;
+        }
+
+        .Gabriela {
+            font-size: 15px;
+            color: lightpink;
+            display: grid;
+            grid-column: 6 / 8;
+            grid-row: 5 / 10;
+            justify-items: center;
+            align-items: center;
+            transform: rotate(240deg);
+            writing-mode: vertical-rl;
+        }
+
+        
+
+        .Aldo {
+            font-size: 15px;
+            color: lightgreen;
+            display: grid;
+            grid-column: 7 / 10;
+            grid-row: 4 / 10;
+            justify-items: center;
+            align-items: center;
+            transform: rotate(240deg);
+            writing-mode: vertical-rl;
+        }
+
+        .Santiago {
+            font-size: 15px;
+            color: lightgreen;
+            display: grid;
+            grid-column: 6 / 11;
+            grid-row: 3 / 10;
+            justify-items: center;
+            align-items: center;
+            transform: rotate(240deg);
+            writing-mode: vertical-rl;
+        }
+
+        .Filigrana {
+            font-size: 15px;
+            color: lightgreen;
+            display: grid;
+            grid-column: 5 / 11;
+            grid-row: 1 / 8;
+            justify-items: center;
+            align-items: center;
+            transform: rotate(240deg);
+            writing-mode: vertical-rl;
+        }
+
+        .equipo {
+            font-size: 15px;
+            font-weight: bold;
+            color: var(--white);
+            display: grid;
+            grid-column: 7 / 10;
+            grid-row: 1 / 1;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .rostro {
+            
+            background: #FFC75F;
+            border-radius: 20px;
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+            width: 170px;
+            align-content: space-evenly;
+                  
+        }
+   
+
+    </style>
+</head>
+<body>
+
+    <div class="invit">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+        <div class="c6"></div>
+        <div class="c7"></div>
+        <div class="c8"></div>
+        <div class="c9"></div>
+        <div class="c10"></div>
+
+        <div class="inv">
+            <h1>¿Vamos?</h1>
+        </div>
+
+        <div class="name">
+            <h1>by 3col0ni@</h1>
+        </div>
+
+        <div class="texto">
+            ¡Hola a tod@s!
+                Hoy quiero hacerles una extensiva invitación a los
+                que han hecho parte de un maravilloso grupo de trabajo en este 2021.
+                Deseo que nos reunamos en un sitio que es muy especial para mi
+                y en el cual me reuno a pasar un buen rato con mi esposa y viejos amigos.
+                Espero estemos por un espacio para desayunar, nos veremos a las 8 am
+                en los MOLINOS de oeste.
+                Un abrazo a tod@s. Ahí nos vemos.
+                NOTA: allá vamos a desayunar, especialidad huevos pericos y/o XXXX...
+                Si alguien presenta problemas con el menu, ME dice sin PENA. Hay otras 
+                cosas buenas.
+        </div>
+        <div class="Daniela">
+            <h2>Daniela <br>Empeño y decisión</h2>
+        </div>
+
+        <div class="Gabriela">
+            <h2>Gabriela <br>Orden y creativa</h2>
+        </div>
+
+        <div class="CristianC">
+            <h2>Cristian C <br>Brillante y capaz</h2>
+        </div>
+        
+        <div class="Aldo">
+            <h2>Aldo <br>Contagio y SALSA</h2>
+        </div>
+
+        <div class="Santiago">
+            <h2>Santiago: <br>Talento e inteligencia</h2>
+        </div>
+
+        <div class="Filigrana">
+            <h2>Filigrana: <br>Control y dominio</h2>
+        </div>
+        
+        
+        <div class="equipo">
+            <h2>Un Equipo Ganador y Compacto</h2>
+        </div>
+
+        <img src="./img rostro.PNG" class="rostro" alt="img">
+        
+    </body>
+</html>
+
+
+

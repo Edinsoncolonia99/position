@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+
+    body {
+        margin: 0; /* eliminar espacio del scroll, margenes*/
+        padding: 0;
+        background: brown;
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    
+    .rostro {
+        width: 100px;
+        height: 200px;
+        background: papayawhip;
+        border-radius: 40px;
+        position: relative; /* se adhieren a este rostro los demas elementos*/
+    }
+
+    .ojo-izquierdo{
+        /* por adeherencia del relative estos elementos se adquieren a este*/
+        width: 20px;
+        height: 20px;
+        background: white;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 60px;
+        border-radius: 50px;
+        left: 32px;
+    }
+
+
+    .ojo-derecho {
+        width: 20px;
+        height: 20px;
+        background: white;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 60px;
+        border-radius: 50px;
+        right: 29px;
+    }
+
+    .ojo-serio {
+        width: 40px;
+        height: 5px;
+        background: black;
+        border-radius: 50px;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 55px;
+        
+        right: 30px;
+    }
+
+
+    .ojito-izquierdo {
+        width: 5px;
+        height: 5px;
+        background: black;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 69px;
+        border-radius: 50px;
+        left: 39px;
+    }
+
+    .ojito-derecho {
+        width: 5px;
+        height: 5px;
+        background: black;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 69px;
+        border-radius: 50px;
+        right: 36px;
+    }
+
+    .nariz {
+        width: 20px;
+        height: 20px;
+        background: papayawhip;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 75px;
+        border-radius: 50px;
+        right: 37px;
+        z-index: 10;
+    }
+
+    .barba {
+        width: 100px;
+        height: 60px;
+        background: black;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 80px;
+        border-radius: 35px;
+        right: 0px;
+    }
+
+
+    .barba2 {
+        width: 100px;
+        height: 100px;
+        background: black;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 100px;
+        border-radius: 40px;
+        right: 0px;
+    }
+    
+    .relleno1 button{
+        width: 0px;
+        height: 40px;
+        background-color: black;
+        border-bottom-color: black;
+        border-top-color: black;
+        border-left-color: black;
+        border-right-color: black;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 110px;
+        right: 0px;
+    }
+
+    .relleno2 button{
+        width: 0px;
+        height: 40px;
+        background-color: black;
+        border-bottom-color: black;
+        border-top-color: black;
+        border-left-color: black;
+        border-right-color: black;
+        position: absolute; /* el elemento toma tamaño del relative */
+        top: 110px;
+        right: 84px;
+    }
+
+    .boca{
+        background:brown;
+        border-bottom-left-radius: 90%;
+        border-bottom-right-radius: 90%;
+        height: 30px;
+        position: absolute;
+        top: 120px;
+        width: 70px;
+        left: 10px;
+        z-index: 5;
+    }
+
+    .dientes {
+        background: white;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 40%;
+        height: 10px;
+        position: absolute;
+        width: 75%;
+        z-index: 3;
+    }
+
+    .lengua{
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 5px;
+        background: red;
+        height: 50%;
+        top: 15px;
+        position: absolute;
+        width: 50%;
+  }
+
+  .oreja-derecha{
+    background: papayawhip;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    height: 25px;
+    position: absolute;
+    right: -10px;
+    top: 50px;
+    width: 28px;
+  }
+
+  .oreja-izquierda{
+    background: papayawhip;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    height: 25px;
+    position: absolute;
+    right: 82px;
+    top: 50px;
+    width: 28px;
+  }
+
+
+
+    
+    
+</style>
+<body>
+    <div class="contenedor">
+        <div class="rostro">
+            <div class="ojo-serio"></div>
+            <div class="ojo-derecho"></div>
+            <div class="ojo-izquierdo"></div>
+            <div class="nariz"></div>
+            <div class="ojito-izquierdo"></div>
+            <div class="ojito-derecho"></div>
+            <div class="nariz"></div>
+            <div class="barba"></div>
+            <div class="barba2"></div>
+            <div class="relleno1">
+                <button></button>
+            </div>
+            <div class="relleno2">
+                <button></button>
+            </div>
+
+            <div class="oreja-derecha"></div>
+            <div class="oreja-izquierda"></div>
+            
+
+            <div class="boca">
+                <div class="dientes"></div>
+                <div class="lengua"></div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>Desarrollo by Edinson Colonia</p>
+      </footer>    
+</body>
+</html>
